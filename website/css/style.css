@@ -4,6 +4,7 @@
     
     --orange: hsl(16, 94%, 66%);
     --white: hsl(0, 0%, 100%);
+    --blue: hsl(202, 100%, 30%);
 
     --wi: 381px;
     --he: 373px;
@@ -47,7 +48,8 @@ header nav li{
 }
 header nav a{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: var(--Sue);
     color: var(--orange);
 }
 #gtv {
@@ -71,18 +73,39 @@ header nav a{
 }
 section{
     min-height: 50vh;
-    padding: 1rem;
     margin-top: 50px;
+}
+.section-splitter{
+    width: 100%;
+}
+.bg-img-flip{
+    transform: rotate(180deg);
+}
+#home p{
+    font-size: 1.6rem;
 }
 .flex{
     display: flex;
+}
+.flex-jc-sb{
     justify-content: space-between;
+}
+.flex-jc-sa{
+    justify-content: space-around;
+}
+.flex-jc-c{
+    justify-content: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
 }
 .blue{
     background-image: url(../gfx/bluetextur.png);
     color: var(--white);
     border-radius: 40px;
     width: 30%;
+    max-width: 465px;
     padding: 20px;
     position: relative;
 }
@@ -108,6 +131,12 @@ section{
     top: 2%;
     left: 47%;
     width: 32px;
+}
+#home .blue{
+    align-items: center;
+}
+.events img{
+    height: 650px;
 }
 
 /* SLIDER STYLING START */
@@ -163,11 +192,39 @@ section{
 }
 
 /* MODAL STYLING START */
-
+#contact img{
+    width: 100%;
+    margin-bottom: 400px;
+}
+#myBtn{
+    background-color: var(--blue);
+    color: var(--orange);
+    border: 0;
+    border-radius: 35px;
+    width: 200px;
+    height: 70px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+#myBtn:hover{
+    background-color: hsl(202, 100%, 35%);
+}
+#home #myBtn{
+    background-color: hsl(202, 100%, 40%);
+    color: var(--white);
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+}
+#home #myBtn:hover{
+    background-color: hsl(202, 100%, 45%);
+}
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 4;
     padding-top: 0px;
     left: 0;
     top: 0;
@@ -201,13 +258,13 @@ footer{
     margin-top: 5rem;
     position: relative;
 }
-footer .bg-img{
-    transform: rotate(180deg);
-}
 footer .overlay{
     position: absolute;
     width: 100%;
     bottom: 0;
+}
+footer .flex{
+    align-items: flex-end;
 }
 footer .wrapper div{
     width: 30%;
@@ -219,7 +276,6 @@ footer .logo img{
 footer .links {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
 }
 footer .links a{
     background: var(--orange);
@@ -256,6 +312,7 @@ footer .info{
 }
 footer .info p{
     color: var(--orange);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--Sue);
     font-weight: bold;
+    font-size: 2rem;
 }

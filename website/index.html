@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/8dc383ed5c.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="gfx/favicon-32x32.png"/>
     <title>smagløs</title>
 </head>
 <body>
@@ -30,22 +31,31 @@
     </header>
     <main>
         <div class="wrapper">
-            <section id="home" class="flex">
-                <div class="blue">
+            <section id="home" class="flex flex-jc-sa">
+                <div class="blue column">
                     <img class="pin" src="gfx/pin.png" alt="">
                     <h3>Café Smagløs</h3>
                     <br>
                     <p>
                         Café Smagløs er både en af Aarhus ældste – og yngste caféer. 
-                        Etableret i 1989 indtog caféen Klostertorvet med jazz, en rodforvirret menu lavet på kærlighed og en atmosfære, 
-                        du kun kan finde hos din skøre boheme af en onkel, der de sidste tyve år har boet i et selvbygget skur på landet med vandrenser, 
-                        porcelæn og solfangere.
+                        Etableret i 1989 indtog caféen Klostertorvet med jazz, 
+                        en rodforvirret menu lavet på kærlighed og en atmosfære,
+                        du kun kan finde hos din skøre boheme af en onkel, 
+                        der de sidste tyve år har boet i et selvbygget skur på landet med vandrenser, porcelæn og solfangere.
                     </p>
-                    <br>
-                    <br>
+                    <button id="myBtn" pointer="click" >Book Her</button>
+                    <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="gfx/Artboard4.png" alt="mockup af booking" width="100%">
+                    </div>
+                </div>
+                </div>
+                <div>
+                    <img src="gfx/board.png" alt="">
                 </div>
             </section>
-            <section id="socials" class="flex">
+            <section id="socials" class="flex flex-jc-sa">
                 <div class="feed">
                     <img src="gfx/instafeed650.png" alt="">
                     <div class="slider-frame">
@@ -69,15 +79,15 @@
                     </div>
                 </div>
                 <div class="events">
-                    <img src="gfx/instafeed650.png" alt="">
+                    <img src="gfx/fbfeed.png" alt="">
                 </div>
             </section>
         </div>
     </main>
     <footer>
-        <img class="bg-img" src="gfx/header220.png" alt="">
+        <img class="bg-img-flip" src="gfx/header220.png" alt="">
         <div class="overlay">
-            <div class="flex wrapper">
+            <div class="flex flex-jc-sb wrapper">
                 <div class="logo">
                     <img src="gfx/smagløs2.png" alt="">
                 </div>
