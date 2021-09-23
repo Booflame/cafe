@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 :root {
     
     --orange: hsl(16, 94%, 66%);
@@ -11,6 +12,7 @@
 
     --Sue: 'Sue Ellen Francisco', cursive;
     --Apple: 'Homemade Apple', cursive;
+    --Perm: 'Permanent Marker', cursive;
 }
 
 body {
@@ -68,15 +70,12 @@ header nav a{
 /* MAIN STYLING START */
 
 .wrapper{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 section{
     min-height: 50vh;
     margin-top: 50px;
-}
-.section-splitter{
-    width: 100%;
 }
 .bg-img-flip{
     transform: rotate(180deg);
@@ -138,6 +137,50 @@ section{
 .events img{
     height: 650px;
 }
+#drinks{
+    position: relative;
+}
+.section-splitter{
+    width: 100%;
+    margin: 150px 0;
+}
+.drinks-img{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.drink-cards{
+    background-color: hsl(120, 3%, 85%);
+    padding: 15px;
+    font-family: var(--Perm);
+    width: 30%;
+}
+.drink-cards .drink-content{
+    background-color: hsl(218, 77%, 22%);
+    min-height: 350px;
+}
+.drink-cards .drink-content h3{
+    color: var(--white);
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 16px;
+    padding-top: 12px;
+}
+.drink-cards .drink-content p{
+    color: var(--white);
+    font-size: 28px;
+    text-align: center;
+}
+.drink-cards .price{
+    background-color: hsl(120, 7%, 89%);
+    margin-top: 20px;
+}
+.drink-cards .price p{
+    color: #000;
+    font-size: 36px;
+    text-align: center;
+}
 
 /* SLIDER STYLING START */
 
@@ -198,7 +241,7 @@ section{
 }
 #myBtn{
     background-color: var(--blue);
-    color: var(--orange);
+    color: var(--white);
     border: 0;
     border-radius: 35px;
     width: 200px;
@@ -213,7 +256,6 @@ section{
 }
 #home #myBtn{
     background-color: hsl(202, 100%, 40%);
-    color: var(--white);
     width: 150px;
     height: 50px;
     border-radius: 25px;
@@ -268,7 +310,7 @@ footer .flex{
 }
 footer .wrapper div{
     width: 30%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 footer .logo img{
     height: 110px;
